@@ -1,5 +1,5 @@
 docker build -t mohitochani/multi-client:latest -t mohitochani/multi-client:$SHA -f ./client/Dockerfile.dev ./client
-docker build -t mohitochani/multi-server:latest -t -t mohitochani/multi-server:$SHA -f ./server/Dockerfile.dev ./server
+docker build -t mohitochani/multi-server:latest -t mohitochani/multi-server:$SHA -f ./server/Dockerfile.dev ./server
 docker build -t mohitochani/multi-worker:latest -t mohitochani/multi-worker:$SHA -f ./server/Dockerfile.dev ./worker
 docker push mohitochani/multi-client:latest
 docker push mohitochani/multi-server:latest
